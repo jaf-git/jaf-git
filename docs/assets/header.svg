@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="Jawad Abo Fakher — computer science engineer, Cluj-Napoca. Built at every layer from a MIPS datapath to a React canvas.">
+  <title>Jawad Abo Fakher — every layer of the stack</title>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#D98A1F" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#D98A1F" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#D98A1F" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="frame"><rect x="0" y="0" width="1200" height="420" rx="20"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+    /* Six layers lighting bottom-to-top, then holding. 9s cycle. */
+    .L1 { animation: lit 9s linear infinite; animation-delay: 0.0s; }
+    .L2 { animation: lit 9s linear infinite; animation-delay: 0.5s; }
+    .L3 { animation: lit 9s linear infinite; animation-delay: 1.0s; }
+    .L4 { animation: lit 9s linear infinite; animation-delay: 1.5s; }
+    .L5 { animation: lit 9s linear infinite; animation-delay: 2.0s; }
+    .L6 { animation: lit 9s linear infinite; animation-delay: 2.5s; }
+    @keyframes lit {
+      0%, 100%  { stroke: #234258; fill: #13263A; }
+      2%        { stroke: #D98A1F; fill: #22303A; }
+      10%       { stroke: #5A93BC; fill: #17293D; }
+      72%, 99%  { stroke: #234258; fill: #13263A; }
+    }
+
+    .T1 { animation: txt 9s linear infinite; animation-delay: 0.0s; }
+    .T2 { animation: txt 9s linear infinite; animation-delay: 0.5s; }
+    .T3 { animation: txt 9s linear infinite; animation-delay: 1.0s; }
+    .T4 { animation: txt 9s linear infinite; animation-delay: 1.5s; }
+    .T5 { animation: txt 9s linear infinite; animation-delay: 2.0s; }
+    .T6 { animation: txt 9s linear infinite; animation-delay: 2.5s; }
+    @keyframes txt {
+      0%, 100% { fill: #8FA3B8; }
+      2%, 10%  { fill: #F2F7FB; }
+      72%, 99% { fill: #8FA3B8; }
+    }
+
+    /* The rising spark that triggers each layer. */
+    .spark { animation: rise 9s cubic-bezier(.4,0,.5,1) infinite; }
+    @keyframes rise {
+      0%       { transform: translateY(0);     opacity: 0; }
+      3%       { opacity: 1; }
+      30%      { transform: translateY(-250px); opacity: 1; }
+      36%      { transform: translateY(-250px); opacity: 0; }
+      100%     { transform: translateY(-250px); opacity: 0; }
+    }
+
+    .sweep { animation: sweep 9s ease-in-out infinite; }
+    @keyframes sweep {
+      0%   { transform: translateX(-200px); }
+      50%  { transform: translateX(200px); }
+      100% { transform: translateX(-200px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .L1,.L2,.L3,.L4,.L5,.L6,.T1,.T2,.T3,.T4,.T5,.T6,.spark,.sweep { animation: none; }
+      .spark { opacity: 0; }
+    }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="420" fill="#0D1926"/>
+    <rect width="1200" height="420" fill="url(#grid)"/>
+
+    <!-- ── identity ── -->
+    <g transform="translate(72, 108)">
+      <text class="mono" x="0" y="-34" font-size="12" fill="#5A93BC" letter-spacing="2.4">COMPUTER SCIENCE ENGINEER · CLUJ-NAPOCA</text>
+      <text class="sans" x="0" y="8" font-size="46" font-weight="700" fill="#F2F7FB" letter-spacing="-1.2">Jawad Abo Fakher</text>
+    </g>
+
+    <g clip-path="url(#frame)">
+      <rect x="72" y="126" width="330" height="2" fill="#234258"/>
+      <rect class="sweep" x="72" y="126" width="200" height="2" fill="url(#rule)"/>
+    </g>
+
+    <text class="sans" x="72" y="172" font-size="19" fill="#B9CBDC">I have built at every layer — a MIPS datapath in VHDL,</text>
+    <text class="sans" x="72" y="200" font-size="19" fill="#B9CBDC">a filesystem in C, and the React canvas on top of both.</text>
+
+    <text class="sans" x="72" y="248" font-size="15" fill="#7E93A8">Final-year engineering student. I care about the boundary</text>
+    <text class="sans" x="72" y="272" font-size="15" fill="#7E93A8">between layers, and about being able to prove a thing works.</text>
+
+    <text class="mono" x="72" y="330" font-size="11.5" fill="#55708A" letter-spacing="1.8">JAVA · SPRING BOOT · C · TYPESCRIPT · REACT · POSTGRESQL · PYTHON</text>
+    <text class="mono" x="72" y="356" font-size="11.5" fill="#55708A" letter-spacing="1.8">TECHNICAL UNIVERSITY OF CLUJ-NAPOCA · AUTOMATION &amp; COMPUTER SCIENCE</text>
+
+    <!-- ── the stack ── -->
+    <g transform="translate(700, 56)">
+      <text class="mono" x="0" y="0" font-size="11" fill="#55708A" letter-spacing="1.6">THE STACK, BOTTOM TO TOP</text>
+
+      <!-- rising spark, from the bottom layer to the top -->
+      <g class="spark" transform="translate(-14, 292)">
+        <circle cx="0" cy="0" r="4" fill="#D98A1F"/>
+        <circle cx="0" cy="0" r="9" fill="#D98A1F" fill-opacity="0.2"/>
+      </g>
+
+      <g transform="translate(0, 16)">
+        <rect class="L6" x="0" y="0"   width="420" height="42" rx="9" fill="#13263A" stroke="#234258" stroke-width="1.5"/>
+        <text class="sans T6" x="18" y="26" font-size="14" font-weight="600" fill="#8FA3B8">Inference</text>
+        <text class="mono"    x="402" y="26" font-size="10.5" fill="#55708A" text-anchor="end">KERAS · SCIKIT-LEARN</text>
+
+        <rect class="L5" x="0" y="50"  width="420" height="42" rx="9" fill="#13263A" stroke="#234258" stroke-width="1.5"/>
+        <text class="sans T5" x="18" y="76" font-size="14" font-weight="600" fill="#8FA3B8">Interfaces</text>
+        <text class="mono"    x="402" y="76" font-size="10.5" fill="#55708A" text-anchor="end">REACT · TYPESCRIPT</text>
+
+        <rect class="L4" x="0" y="100" width="420" height="42" rx="9" fill="#13263A" stroke="#234258" stroke-width="1.5"/>
+        <text class="sans T4" x="18" y="126" font-size="14" font-weight="600" fill="#8FA3B8">Services</text>
+        <text class="mono"    x="402" y="126" font-size="10.5" fill="#55708A" text-anchor="end">SPRING BOOT · POSTGRESQL</text>
+
+        <rect class="L3" x="0" y="150" width="420" height="42" rx="9" fill="#13263A" stroke="#234258" stroke-width="1.5"/>
+        <text class="sans T3" x="18" y="176" font-size="14" font-weight="600" fill="#8FA3B8">Algorithms</text>
+        <text class="mono"    x="402" y="176" font-size="10.5" fill="#55708A" text-anchor="end">TREES · GRAPHS · DP</text>
+
+        <rect class="L2" x="0" y="200" width="420" height="42" rx="9" fill="#13263A" stroke="#234258" stroke-width="1.5"/>
+        <text class="sans T2" x="18" y="226" font-size="14" font-weight="600" fill="#8FA3B8">Systems</text>
+        <text class="mono"    x="402" y="226" font-size="10.5" fill="#55708A" text-anchor="end">LINUX · POSIX THREADS · C</text>
+
+        <rect class="L1" x="0" y="250" width="420" height="42" rx="9" fill="#13263A" stroke="#234258" stroke-width="1.5"/>
+        <text class="sans T1" x="18" y="276" font-size="14" font-weight="600" fill="#8FA3B8">Silicon</text>
+        <text class="mono"    x="402" y="276" font-size="10.5" fill="#55708A" text-anchor="end">MIPS DATAPATH · VHDL</text>
+      </g>
+    </g>
+
+    <rect x="0.75" y="0.75" width="1198.5" height="418.5" rx="19.25" fill="none" stroke="#234258" stroke-width="1.5"/>
+  </g>
+</svg>
