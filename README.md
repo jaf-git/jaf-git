@@ -19,93 +19,90 @@
 <br>
 
 <details>
-<summary><b>Graphs</b> — 10 implementations, Java and C++</summary>
+<summary><b>Graphs</b></summary>
 
 <br>
 
-| Algorithm | Complexity | Note |
-|:--|:--|:--|
-| Dijkstra, set-based | `O(E log V)` | A set rather than a heap, so a key can be decreased |
-| Kruskal with union-find | `O(E log E)` | Path compression makes the cycle test near-constant |
-| Kruskal, naive cycle test | `O(E·V)` | Built first on purpose, to show what union-find buys |
-| Prim | `O(E log V)` | The same tree, grown instead of assembled |
-| BFS and DFS | `O(V+E)` | Written in both languages |
-| Multi-source BFS | `O(V+E)` | Seed the queue with every source; the traversal is unchanged |
-| Cycle detection, undirected | `O(V+E)` | The parent check is not the visited check |
-| Bipartite check | `O(V+E)` | Two-colouring via DFS |
-| Connected components | `O(V²)` | On an adjacency matrix |
-| Shortest path, binary maze | `O(R·C)` | BFS on an implicit graph |
+- [Dijkstra](https://github.com/jaf-git/graphs-data-structure/tree/main/Dijkstra)
+- [Kruskal with union-find](https://github.com/jaf-git/graphs-data-structure/tree/main/KruskalDisjointSets)
+- [Kruskal](https://github.com/jaf-git/graphs-data-structure/tree/main/Kruskal)
+- [Prim](https://github.com/jaf-git/graphs-data-structure/tree/main/Prim)
+- [BFS](https://github.com/jaf-git/graphs-data-structure/tree/main/BFS)
+- [DFS](https://github.com/jaf-git/graphs-data-structure/tree/main/DFS)
+- [Multi-source BFS](https://github.com/jaf-git/graphs-data-structure/tree/main/RottenOranges)
+- [Cycle detection, undirected](https://github.com/jaf-git/graphs-data-structure/tree/main/CycleDetection)
+- [Bipartite check](https://github.com/jaf-git/graphs-data-structure/tree/main/BipartiteGraph)
+- [Connected components](https://github.com/jaf-git/graphs-data-structure/tree/main/NumberOfProvinces)
+- [Shortest path in a binary maze](https://github.com/jaf-git/graphs-data-structure/tree/main/ShortestDistanceBinaryMaze)
 
 [graphs-data-structure →](https://github.com/jaf-git/graphs-data-structure)
 
 </details>
 
 <details>
-<summary><b>Trees</b> — 10 implementations</summary>
+<summary><b>Trees</b></summary>
 
 <br>
 
-| Algorithm | Complexity | Note |
-|:--|:--|:--|
-| Morris traversal | `O(n)` time, `O(1)` space | Threading the tree instead of carrying a stack |
-| Iterative traversal | `O(n)` | Explicit stack, which is what recursion was doing for you |
-| B-tree construction | — | Node splitting and order invariants |
-| Lowest common ancestor | `O(n)` | Bottom-up, single pass |
-| Maximum path sum | `O(n)` | The value returned upward differs from the value recorded |
-| Diameter and height | `O(n)` | One post-order pass returning two things |
-| Rebuild from in-order + pre-order | `O(n)` | Why that pair is sufficient |
-| Rebuild from in-order + post-order | `O(n)` | The mirror argument |
-| Children-sum property | `O(n)` | Mutating a tree to satisfy an invariant |
-| Identical-tree check | `O(n)` | Structural equality |
+- [Morris traversal](https://github.com/jaf-git/Trees-Data-Structure/tree/main/MorrisTraversal)
+- [Iterative traversal](https://github.com/jaf-git/Trees-Data-Structure/tree/main/IterativeTraversal)
+- [B-tree construction](https://github.com/jaf-git/Trees-Data-Structure/tree/main/BTree)
+- [Lowest common ancestor](https://github.com/jaf-git/Trees-Data-Structure/tree/main/LowestCommonAncestor)
+- [Maximum path sum](https://github.com/jaf-git/Trees-Data-Structure/tree/main/MaximumPathSum)
+- [Diameter of a binary tree](https://github.com/jaf-git/Trees-Data-Structure/tree/main/Diameter)
+- [Height of a binary tree](https://github.com/jaf-git/Trees-Data-Structure/tree/main/Height)
+- [Rebuild from in-order and pre-order](https://github.com/jaf-git/Trees-Data-Structure/tree/main/ConstructInorderPreorder)
+- [Rebuild from in-order and post-order](https://github.com/jaf-git/Trees-Data-Structure/tree/main/ConstructInorderPostorder)
+- [Children-sum property](https://github.com/jaf-git/Trees-Data-Structure/tree/main/ChildrenSumProperty)
+- [Identical-tree check](https://github.com/jaf-git/Trees-Data-Structure/tree/main/IdenticalTrees)
 
 [Trees-Data-Structure →](https://github.com/jaf-git/Trees-Data-Structure)
 
 </details>
 
 <details>
-<summary><b>Recursion, dynamic programming and concurrency</b> — 11 implementations</summary>
+<summary><b>Recursion and dynamic programming</b></summary>
 
 <br>
 
-Each problem appears first as plain recursion, then memoised, then tabulated. The route between
-them is the lesson.
+- [Fibonacci](https://github.com/jaf-git/recursive-algorithms/tree/main/Fibonacci)
+- [Frog jump](https://github.com/jaf-git/recursive-algorithms/tree/main/FrogJump)
+- [Printing subsequences](https://github.com/jaf-git/recursive-algorithms/tree/main/Subsequences)
+- [Subsequences with a target sum](https://github.com/jaf-git/recursive-algorithms/tree/main/TargetSum)
+- [Sorting algorithms](https://github.com/jaf-git/recursive-algorithms/tree/main/Sorting)
 
-```
-recursion  ──▶  memoise  ──▶  tabulate  ──▶  shrink the table
-exponential     top-down      bottom-up      O(1) space
-```
-
-| Problem | What it demonstrates |
-|:--|:--|
-| Fibonacci | The canonical progression, exponential to constant space |
-| Frog jump | First problem where the recurrence isn't obvious from the statement |
-| Subsequence generation | Take or skip, the shape underneath most subset DP |
-| Target-sum subsets | The same recursion with a pruning condition |
-| Sorting algorithms | Implemented in C++ |
-| Dining philosophers | Deadlock comes from an ordering, not a bug in any one thread |
-| Recursive filesystem search | Fan-out where you don't know the fan-out in advance |
-| The same, with wait groups | Knowing when work that spawns work has actually finished |
-| Parallel page fetching | I/O-bound parallelism, where threads genuinely pay |
-| Queue management simulation | Correctness that has to be measured rather than asserted |
-| Threads and mutexes | Against the C API directly |
-
-[recursive-algorithms →](https://github.com/jaf-git/recursive-algorithms) · [Dynamic-Programming →](https://github.com/jaf-git/Dynamic-Programming) · [Multithreading-Space →](https://github.com/jaf-git/Multithreading-Space) · [queues-management →](https://github.com/jaf-git/queues-management-app-using-threads)
+[recursive-algorithms →](https://github.com/jaf-git/recursive-algorithms)
 
 </details>
 
 <details>
-<summary><b>Coursework</b> — Eng. Automation and Computer Science, UTCN</summary>
+<summary><b>Concurrency</b></summary>
 
 <br>
 
-| Area | Repository | Language |
-|:--|:--|:--|
-| Operating systems | [Linux-OS-Space](https://github.com/jaf-git/Linux-OS-Space) | C, Python |
-| Computer architecture | [hardware-programming](https://github.com/jaf-git/hardware-programming) | VHDL |
-| Computer graphics | [Computer-Graphics](https://github.com/jaf-git/Computer-Graphics) | C, C++ |
-| Software design | [polynomial-calculator](https://github.com/jaf-git/polynomial-calculator) · [Orders-Management](https://github.com/jaf-git/Orders-Management-application) | Java |
-| Full-stack | [JBank](https://github.com/jaf-git/JBank-Repository) | Java, TypeScript |
-| Intelligent systems | [classical models](https://github.com/jaf-git/bank-marketing-term-deposit-subscription-prediction) · [neural network](https://github.com/jaf-git/bank-marketing-neural-network-classifier) | Python |
+- [Dining philosophers](https://github.com/jaf-git/Multithreading-Space/tree/main/DiningPhilosophers)
+- [Recursive filesystem search](https://github.com/jaf-git/Multithreading-Space/tree/main/FileSearch)
+- [Filesystem search with wait groups](https://github.com/jaf-git/Multithreading-Space/tree/main/FileSearchWaitGroup)
+- [Counting letters across fetched pages](https://github.com/jaf-git/Multithreading-Space/tree/main/LetterCount)
+
+[Multithreading-Space →](https://github.com/jaf-git/Multithreading-Space)
+
+</details>
+
+<details>
+<summary><b>Coursework</b></summary>
+
+<br>
+
+- [Operating systems — Linux-OS-Space](https://github.com/jaf-git/Linux-OS-Space)
+- [Computer architecture — MIPS CPU](https://github.com/jaf-git/hardware-programming)
+- [Computer graphics](https://github.com/jaf-git/Computer-Graphics)
+- [Polynomial calculator](https://github.com/jaf-git/polynomial-calculator)
+- [Orders management](https://github.com/jaf-git/Orders-Management-application)
+- [Queue management simulation](https://github.com/jaf-git/queues-management-app-using-threads)
+- [JBank — online banking](https://github.com/jaf-git/JBank-Repository)
+- [Bank marketing — classical models](https://github.com/jaf-git/bank-marketing-term-deposit-subscription-prediction)
+- [Bank marketing — neural network](https://github.com/jaf-git/bank-marketing-neural-network-classifier)
 
 </details>
 
@@ -113,6 +110,6 @@ exponential     top-down      bottom-up      O(1) space
 
 <div align="center">
 
-**[abofakherjawad@gmail.com](mailto:abofakherjawad@gmail.com)** &nbsp;·&nbsp; **[LinkedIn](https://linkedin.com/in/jawadabofakher)** &nbsp;·&nbsp; Cluj-Napoca, Romania
+**[abofakherjawad@gmail.com](mailto:abofakherjawad@gmail.com)** &nbsp;&middot;&nbsp; **[LinkedIn](https://linkedin.com/in/jawadabofakher)** &nbsp;&middot;&nbsp; Cluj-Napoca, Romania
 
 </div>
