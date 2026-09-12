@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="API Contract Validator — IntelliJ IDEA plugin in Kotlin and Java that checks controllers against an OpenAPI specification">
+  <title>API Contract Validator — IntelliJ plugin</title>
+  <defs>
+    <linearGradient id="vSpine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <radialGradient id="vGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#06B6D4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="vClip"><rect x="0" y="0" width="1200" height="240" rx="20"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+    /* the squiggly underline the plugin draws, sweeping in */
+    .squig { stroke-dasharray: 160; stroke-dashoffset: 160; animation: draw 4.5s ease-in-out infinite; }
+    @keyframes draw {
+      0%       { stroke-dashoffset: 160; }
+      22%, 72% { stroke-dashoffset: 0; }
+      92%,100% { stroke-dashoffset: 160; }
+    }
+    .warn { animation: warn 4.5s ease-in-out infinite; }
+    @keyframes warn { 0%,18%{opacity:0} 26%,72%{opacity:1} 90%,100%{opacity:0} }
+    .glow { animation: breathe 7s ease-in-out infinite; }
+    @keyframes breathe { 0%,100%{opacity:.55} 50%{opacity:1} }
+
+    @media (prefers-reduced-motion: reduce) {
+      .squig,.warn,.glow { animation: none; }
+      .squig { stroke-dashoffset: 0; } .warn { opacity: 1; }
+    }
+  </style>
+
+  <g clip-path="url(#vClip)">
+    <rect width="1200" height="240" fill="#0A0F1C"/>
+    <ellipse class="glow" cx="980" cy="120" rx="320" ry="190" fill="url(#vGlow)"/>
+    <rect x="0" y="0" width="6" height="240" fill="url(#vSpine)"/>
+
+    <text class="mono" x="48" y="48" font-size="11" fill="#22D3EE" letter-spacing="2">DEVELOPER TOOLING · SHIPPED WITH CI</text>
+    <text class="sans" x="48" y="92" font-size="34" font-weight="800" fill="#F1F5F9" letter-spacing="-0.8">API Contract Validator</text>
+    <text class="sans" x="48" y="126" font-size="16" fill="#94A3B8">An IntelliJ IDEA plugin that catches OpenAPI drift as you type — not on the next CI run.</text>
+
+    <g transform="translate(48, 150)">
+      <rect x="0"   y="0" width="66"  height="26" rx="13" fill="#1B1633" stroke="#4C1D95" stroke-width="1"/>
+      <text class="mono" x="33"  y="17" font-size="10.5" fill="#C4B5FD" text-anchor="middle">KOTLIN</text>
+
+      <rect x="74"  y="0" width="56"  height="26" rx="13" fill="#12203A" stroke="#1E3A5F" stroke-width="1"/>
+      <text class="mono" x="102" y="17" font-size="10.5" fill="#93C5FD" text-anchor="middle">JAVA</text>
+
+      <rect x="138" y="0" width="70"  height="26" rx="13" fill="#0B2530" stroke="#155E75" stroke-width="1"/>
+      <text class="mono" x="173" y="17" font-size="10.5" fill="#67E8F9" text-anchor="middle">GRADLE</text>
+
+      <rect x="216" y="0" width="150" height="26" rx="13" fill="#101E33" stroke="#1E3A5F" stroke-width="1"/>
+      <text class="mono" x="291" y="17" font-size="10.5" fill="#93C5FD" text-anchor="middle">INTELLIJ PLATFORM</text>
+
+      <rect x="374" y="0" width="82"  height="26" rx="13" fill="#12261A" stroke="#1E4620" stroke-width="1"/>
+      <text class="mono" x="415" y="17" font-size="10.5" fill="#86EFAC" text-anchor="middle">OPENAPI</text>
+
+      <rect x="464" y="0" width="76"  height="26" rx="13" fill="#2A1D0B" stroke="#78350F" stroke-width="1"/>
+      <text class="mono" x="502" y="17" font-size="10.5" fill="#FCD34D" text-anchor="middle">CODECOV</text>
+    </g>
+
+    <g transform="translate(48, 210)">
+      <text class="mono" x="0"   y="0" font-size="10.5" fill="#64748B">EDITOR INSPECTIONS</text>
+      <text class="mono" x="150" y="0" font-size="10.5" fill="#64748B">·  UI TESTS IN CI</text>
+      <text class="mono" x="284" y="0" font-size="10.5" fill="#64748B">·  MARKETPLACE LISTING GENERATED FROM THE README</text>
+    </g>
+
+    <!-- spec vs code motif -->
+    <g transform="translate(700, 74)">
+      <text class="mono" x="0"   y="0" font-size="10" fill="#475569" letter-spacing="1.4">THE SPEC SAYS</text>
+      <rect x="0" y="10" width="200" height="54" rx="10" fill="#0E1626" stroke="#1E293B" stroke-width="1.5"/>
+      <text class="mono" x="14" y="32" font-size="10.5" fill="#86EFAC">required: [id, total,</text>
+      <text class="mono" x="14" y="50" font-size="10.5" fill="#86EFAC">           currency]</text>
+
+      <text class="mono" x="240" y="0" font-size="10" fill="#475569" letter-spacing="1.4">THE CODE RETURNS</text>
+      <rect x="240" y="10" width="200" height="54" rx="10" fill="#0E1626" stroke="#1E293B" stroke-width="1.5"/>
+      <text class="mono" x="254" y="32" font-size="10.5" fill="#FCA5A5">id, total</text>
+      <text class="mono" x="254" y="50" font-size="10.5" fill="#64748B">// currency missing</text>
+
+      <!-- the inspection squiggle -->
+      <path class="squig" d="M 254 60 q 6 -6 12 0 t 12 0 t 12 0 t 12 0 t 12 0 t 12 0 t 12 0"
+            fill="none" stroke="#F43F5E" stroke-width="2"/>
+
+      <g class="warn" transform="translate(240, 84)">
+        <rect x="0" y="0" width="200" height="26" rx="8" fill="#2A1015" stroke="#7F1D1D" stroke-width="1"/>
+        <text class="mono" x="12" y="17" font-size="10" fill="#FCA5A5">⚠ schema drift · line 42</text>
+      </g>
+    </g>
+
+    <rect x="1" y="1" width="1198" height="238" rx="19" fill="none" stroke="#1E293B" stroke-width="2"/>
+  </g>
+</svg>

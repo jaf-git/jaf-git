@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="Jawad Abo Fakher — Backend Engineer, Java and Spring Boot, Cluj-Napoca">
+  <title>Jawad Abo Fakher — Backend Engineer</title>
+  <defs>
+    <linearGradient id="hName" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#60A5FA"/>
+      <stop offset="45%"  stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="hRule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#3B82F6"/>
+      <stop offset="50%"  stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#3B82F6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#8B5CF6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#06B6D4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.028" stroke-width="1"/>
+    </pattern>
+    <clipPath id="hClip"><rect x="0" y="0" width="1200" height="440" rx="24"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, sans-serif; }
+
+    .drift1 { animation: drift1 18s ease-in-out infinite; }
+    .drift2 { animation: drift2 22s ease-in-out infinite; }
+    .drift3 { animation: drift3 26s ease-in-out infinite; }
+    @keyframes drift1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,-24px)} }
+    @keyframes drift2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-36px,20px)} }
+    @keyframes drift3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(24px,28px)} }
+
+    .rule { animation: grow 3.2s cubic-bezier(.16,1,.3,1) infinite alternate; transform-origin: left center; }
+    @keyframes grow { from { transform: scaleX(.35) } to { transform: scaleX(1) } }
+
+    .tile1 { animation: pop 6s ease-in-out infinite; animation-delay: 0s;   }
+    .tile2 { animation: pop 6s ease-in-out infinite; animation-delay: .5s;  }
+    .tile3 { animation: pop 6s ease-in-out infinite; animation-delay: 1s;   }
+    .tile4 { animation: pop 6s ease-in-out infinite; animation-delay: 1.5s; }
+    @keyframes pop {
+      0%, 100% { stroke: #1E293B; }
+      6%       { stroke: #60A5FA; }
+      22%      { stroke: #1E293B; }
+    }
+
+    .cursor { animation: blink 1.1s steps(1) infinite; }
+    @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+
+    @media (prefers-reduced-motion: reduce) {
+      .drift1,.drift2,.drift3,.rule,.tile1,.tile2,.tile3,.tile4,.cursor { animation: none; }
+      .rule { transform: scaleX(1); }
+    }
+  </style>
+
+  <g clip-path="url(#hClip)">
+    <rect width="1200" height="440" fill="#070B14"/>
+    <ellipse class="drift1" cx="170" cy="110" rx="360" ry="240" fill="url(#glowA)"/>
+    <ellipse class="drift2" cx="880" cy="330" rx="380" ry="250" fill="url(#glowB)"/>
+    <ellipse class="drift3" cx="620" cy="60"  rx="300" ry="200" fill="url(#glowC)"/>
+    <rect width="1200" height="440" fill="url(#hGrid)"/>
+
+    <!-- availability pill -->
+    <g transform="translate(72, 74)">
+      <rect x="0" y="-20" width="252" height="30" rx="15" fill="#052E1C" stroke="#10B981" stroke-width="1.25"/>
+      <circle cx="20" cy="-5" r="4.5" fill="#34D399"/>
+      <text class="mono" x="36" y="-1" font-size="11.5" fill="#6EE7B7" letter-spacing="1.3">OPEN TO BACKEND ROLES</text>
+    </g>
+
+    <!-- name -->
+    <text class="sans" x="72" y="168" font-size="60" font-weight="800" fill="url(#hName)" letter-spacing="-2">Jawad Abo Fakher</text>
+
+    <!-- animated rule -->
+    <rect class="rule" x="72" y="188" width="330" height="4" rx="2" fill="url(#hRule)"/>
+
+    <!-- role -->
+    <text class="sans" x="72" y="238" font-size="26" font-weight="600" fill="#E2E8F0">Backend Engineer
+      <tspan fill="#475569"> · </tspan><tspan fill="#6DB33F">Java</tspan><tspan fill="#475569"> · </tspan><tspan fill="#6DB33F">Spring Boot</tspan>
+    </text>
+
+    <text class="sans" x="72" y="278" font-size="16.5" fill="#94A3B8">I design and ship production-grade services — clean architecture,</text>
+    <text class="sans" x="72" y="302" font-size="16.5" fill="#94A3B8">relational data modelling, and test suites that actually prove something.</text>
+
+    <text class="mono" x="72" y="352" font-size="12" fill="#64748B" letter-spacing="1.6">📍 CLUJ-NAPOCA, ROMANIA<tspan fill="#334155">  ·  </tspan>B.ENG. AUTOMATION &amp; COMPUTER SCIENCE, UTCN<tspan class="cursor" fill="#60A5FA"> ▌</tspan></text>
+
+    <!-- metric tiles -->
+    <g transform="translate(760, 118)">
+      <g>
+        <rect class="tile1" x="0" y="0" width="172" height="86" rx="14" fill="#0C1322" stroke="#1E293B" stroke-width="1.5"/>
+        <text class="sans" x="20" y="42" font-size="30" font-weight="800" fill="#60A5FA">265</text>
+        <text class="mono" x="20" y="64" font-size="10" fill="#64748B" letter-spacing="1.2">REST ENDPOINTS</text>
+      </g>
+      <g transform="translate(188, 0)">
+        <rect class="tile2" x="0" y="0" width="172" height="86" rx="14" fill="#0C1322" stroke="#1E293B" stroke-width="1.5"/>
+        <text class="sans" x="20" y="42" font-size="30" font-weight="800" fill="#A78BFA">91</text>
+        <text class="mono" x="20" y="64" font-size="10" fill="#64748B" letter-spacing="1.2">SQL TABLES MODELLED</text>
+      </g>
+      <g transform="translate(0, 104)">
+        <rect class="tile3" x="0" y="0" width="172" height="86" rx="14" fill="#0C1322" stroke="#1E293B" stroke-width="1.5"/>
+        <text class="sans" x="20" y="42" font-size="30" font-weight="800" fill="#22D3EE">506</text>
+        <text class="mono" x="20" y="64" font-size="10" fill="#64748B" letter-spacing="1.2">AUTOMATED TEST FILES</text>
+      </g>
+      <g transform="translate(188, 104)">
+        <rect class="tile4" x="0" y="0" width="172" height="86" rx="14" fill="#0C1322" stroke="#1E293B" stroke-width="1.5"/>
+        <text class="sans" x="20" y="42" font-size="30" font-weight="800" fill="#FBBF24">40+</text>
+        <text class="mono" x="20" y="64" font-size="10" fill="#64748B" letter-spacing="1.2">ALGORITHMS BUILT</text>
+      </g>
+    </g>
+
+    <rect x="1" y="1" width="1198" height="438" rx="23" fill="none" stroke="#1E293B" stroke-width="2"/>
+  </g>
+</svg>

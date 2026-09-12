@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" role="img" aria-label="Open to backend engineering roles — start with FlowOps">
+  <title>Open to backend engineering roles</title>
+  <defs>
+    <linearGradient id="ctaBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#0B1220"/>
+      <stop offset="50%"  stop-color="#111A33"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="ctaBtn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#3B82F6"/>
+      <stop offset="50%"  stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="ctaText" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#93C5FD"/>
+      <stop offset="100%" stop-color="#6EE7B7"/>
+    </linearGradient>
+    <radialGradient id="ctaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#8B5CF6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="ctaClip"><rect x="0" y="0" width="1200" height="200" rx="20"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+    .pulse  { animation: pulse 2.6s ease-in-out infinite; transform-origin: center; }
+    @keyframes pulse { 0%,100%{opacity:.9; transform:scale(1)} 50%{opacity:1; transform:scale(1.015)} }
+
+    .ring   { animation: ring 2.6s ease-out infinite; transform-origin: center; }
+    @keyframes ring { 0%{opacity:.55; transform:scale(1)} 70%,100%{opacity:0; transform:scale(1.12)} }
+
+    .arrow  { animation: nudge 1.6s ease-in-out infinite; }
+    @keyframes nudge { 0%,100%{transform:translateX(0)} 50%{transform:translateX(6px)} }
+
+    .dot    { animation: live 2s ease-in-out infinite; }
+    @keyframes live { 0%,100%{opacity:1} 50%{opacity:.35} }
+
+    .drift  { animation: drift 16s ease-in-out infinite; }
+    @keyframes drift { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-40px,14px)} }
+
+    @media (prefers-reduced-motion: reduce) {
+      .pulse,.ring,.arrow,.dot,.drift { animation: none; }
+      .ring { opacity: 0; }
+    }
+  </style>
+
+  <g clip-path="url(#ctaClip)">
+    <rect width="1200" height="200" fill="url(#ctaBg)"/>
+    <ellipse class="drift" cx="760" cy="100" rx="420" ry="160" fill="url(#ctaGlow)"/>
+
+    <g transform="translate(56, 62)">
+      <circle class="dot" cx="8" cy="-5" r="5" fill="#34D399"/>
+      <text class="mono" x="24" y="-1" font-size="11.5" fill="#6EE7B7" letter-spacing="1.6">AVAILABLE FOR BACKEND ENGINEERING ROLES</text>
+    </g>
+
+    <text class="sans" x="56" y="116" font-size="30" font-weight="800" fill="url(#ctaText)" letter-spacing="-0.6">Let's build something that has to be right.</text>
+    <text class="sans" x="56" y="152" font-size="15" fill="#94A3B8">Java · Spring Boot · PostgreSQL — based in Cluj-Napoca, open to hybrid and remote.</text>
+
+    <!-- primary action -->
+    <g transform="translate(912, 100)">
+      <rect class="ring" x="-140" y="-30" width="280" height="60" rx="30" fill="none" stroke="#8B5CF6" stroke-width="2"/>
+      <rect class="pulse" x="-140" y="-30" width="280" height="60" rx="30" fill="url(#ctaBtn)"/>
+      <text class="sans" x="-14" y="7" font-size="17" font-weight="700" fill="#0B1220" text-anchor="middle">Explore FlowOps</text>
+      <g class="arrow" transform="translate(96, 0)">
+        <path d="M -10 0 L 6 0 M 0 -6 L 6 0 L 0 6" fill="none" stroke="#0B1220" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <rect x="1" y="1" width="1198" height="198" rx="19" fill="none" stroke="#1E293B" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="FlowOps — process discovery platform. Java 21, Spring Boot, PostgreSQL, React. 17 bounded contexts, 265 endpoints, 91 tables, 506 test files.">
+  <title>FlowOps — process discovery platform</title>
+  <defs>
+    <linearGradient id="fSpine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <radialGradient id="fGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#3B82F6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="fClip"><rect x="0" y="0" width="1200" height="240" rx="20"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+    .flow { stroke-dasharray: 6 8; animation: flow 1.4s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -14; } }
+
+    .n1 { animation: node 5s ease-in-out infinite; animation-delay: 0s; }
+    .n2 { animation: node 5s ease-in-out infinite; animation-delay: .55s; }
+    .n3 { animation: node 5s ease-in-out infinite; animation-delay: 1.1s; }
+    .n4 { animation: node 5s ease-in-out infinite; animation-delay: 1.65s; }
+    @keyframes node {
+      0%, 100% { fill: #1E293B; stroke: #334155; }
+      8%       { fill: #1D4ED8; stroke: #60A5FA; }
+      30%      { fill: #1E293B; stroke: #334155; }
+    }
+    .glow { animation: breathe 7s ease-in-out infinite; }
+    @keyframes breathe { 0%,100%{opacity:.55} 50%{opacity:1} }
+
+    @media (prefers-reduced-motion: reduce) { .flow,.n1,.n2,.n3,.n4,.glow { animation: none; } }
+  </style>
+
+  <g clip-path="url(#fClip)">
+    <rect width="1200" height="240" fill="#0A0F1C"/>
+    <ellipse class="glow" cx="980" cy="120" rx="320" ry="190" fill="url(#fGlow)"/>
+    <rect x="0" y="0" width="6" height="240" fill="url(#fSpine)"/>
+
+    <!-- label -->
+    <text class="mono" x="48" y="48" font-size="11" fill="#60A5FA" letter-spacing="2">FLAGSHIP · BACHELOR'S THESIS</text>
+
+    <!-- title -->
+    <text class="sans" x="48" y="92" font-size="34" font-weight="800" fill="#F1F5F9" letter-spacing="-0.8">FlowOps</text>
+
+    <!-- one-liner -->
+    <text class="sans" x="48" y="126" font-size="16" fill="#94A3B8">Recovers the business processes nobody wrote down, from the work already happening in chat.</text>
+
+    <!-- tech chips -->
+    <g transform="translate(48, 150)">
+      <rect x="0"   y="0" width="74"  height="26" rx="13" fill="#12203A" stroke="#1E3A5F" stroke-width="1"/>
+      <text class="mono" x="37"  y="17" font-size="10.5" fill="#93C5FD" text-anchor="middle">JAVA 21</text>
+
+      <rect x="82"  y="0" width="104" height="26" rx="13" fill="#12261A" stroke="#1E4620" stroke-width="1"/>
+      <text class="mono" x="134" y="17" font-size="10.5" fill="#86EFAC" text-anchor="middle">SPRING BOOT</text>
+
+      <rect x="196" y="0" width="102" height="26" rx="13" fill="#101E33" stroke="#1E3A5F" stroke-width="1"/>
+      <text class="mono" x="247" y="17" font-size="10.5" fill="#93C5FD" text-anchor="middle">POSTGRESQL</text>
+
+      <rect x="308" y="0" width="96"  height="26" rx="13" fill="#0B2530" stroke="#155E75" stroke-width="1"/>
+      <text class="mono" x="356" y="17" font-size="10.5" fill="#67E8F9" text-anchor="middle">HEXAGONAL</text>
+
+      <rect x="414" y="0" width="74"  height="26" rx="13" fill="#1B1633" stroke="#4C1D95" stroke-width="1"/>
+      <text class="mono" x="451" y="17" font-size="10.5" fill="#C4B5FD" text-anchor="middle">REACT 19</text>
+
+      <rect x="498" y="0" width="110" height="26" rx="13" fill="#2A1D0B" stroke="#78350F" stroke-width="1"/>
+      <text class="mono" x="553" y="17" font-size="10.5" fill="#FCD34D" text-anchor="middle">TESTCONTAINERS</text>
+    </g>
+
+    <!-- metrics -->
+    <g transform="translate(48, 210)">
+      <text class="sans" x="0"   y="0" font-size="15" font-weight="700" fill="#60A5FA">17</text>
+      <text class="mono" x="20"  y="0" font-size="10.5" fill="#64748B">BOUNDED CONTEXTS</text>
+
+      <text class="sans" x="180" y="0" font-size="15" font-weight="700" fill="#A78BFA">265</text>
+      <text class="mono" x="212" y="0" font-size="10.5" fill="#64748B">ENDPOINTS</text>
+
+      <text class="sans" x="322" y="0" font-size="15" font-weight="700" fill="#22D3EE">91</text>
+      <text class="mono" x="344" y="0" font-size="10.5" fill="#64748B">TABLES</text>
+
+      <text class="sans" x="434" y="0" font-size="15" font-weight="700" fill="#FBBF24">506</text>
+      <text class="mono" x="466" y="0" font-size="10.5" fill="#64748B">TEST FILES</text>
+
+      <text class="sans" x="580" y="0" font-size="15" font-weight="700" fill="#34D399">104</text>
+      <text class="mono" x="612" y="0" font-size="10.5" fill="#64748B">MIGRATIONS</text>
+    </g>
+
+    <!-- the pipeline motif -->
+    <g transform="translate(790, 116)">
+      <line class="flow" x1="18" y1="0" x2="322" y2="0" stroke="#334155" stroke-width="2"/>
+
+      <g><rect class="n1" x="0"   y="-18" width="36" height="36" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+         <text class="mono" x="18"  y="38" font-size="9" fill="#64748B" text-anchor="middle">CHAT</text></g>
+      <g><rect class="n2" x="102" y="-18" width="36" height="36" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+         <text class="mono" x="120" y="38" font-size="9" fill="#64748B" text-anchor="middle">NODE</text></g>
+      <g><rect class="n3" x="204" y="-18" width="36" height="36" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+         <text class="mono" x="222" y="38" font-size="9" fill="#64748B" text-anchor="middle">GRAPH</text></g>
+      <g><rect class="n4" x="306" y="-18" width="36" height="36" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
+         <text class="mono" x="324" y="38" font-size="9" fill="#64748B" text-anchor="middle">PROCESS</text></g>
+
+      <text class="mono" x="171" y="-42" font-size="10" fill="#475569" text-anchor="middle" letter-spacing="1.4">DISCOVERY PIPELINE</text>
+    </g>
+
+    <rect x="1" y="1" width="1198" height="238" rx="19" fill="none" stroke="#1E293B" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-label="MIPS CPU Design — a 32-bit processor in VHDL with a five-stage datapath and a control unit">
+  <title>MIPS CPU Design — 32-bit processor in VHDL</title>
+  <defs>
+    <linearGradient id="mSpine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
+    </linearGradient>
+    <radialGradient id="mGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#F59E0B" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="mClip"><rect x="0" y="0" width="1200" height="240" rx="20"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace; }
+    .sans { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+
+    /* an instruction advancing through the five stages */
+    .s1 { animation: stage 5s linear infinite; animation-delay: 0s; }
+    .s2 { animation: stage 5s linear infinite; animation-delay: .6s; }
+    .s3 { animation: stage 5s linear infinite; animation-delay: 1.2s; }
+    .s4 { animation: stage 5s linear infinite; animation-delay: 1.8s; }
+    .s5 { animation: stage 5s linear infinite; animation-delay: 2.4s; }
+    @keyframes stage {
+      0%, 100% { fill: #171F2E; stroke: #334155; }
+      4%       { fill: #422006; stroke: #F59E0B; }
+      18%      { fill: #171F2E; stroke: #334155; }
+    }
+    .t1 { animation: stxt 5s linear infinite; animation-delay: 0s; }
+    .t2 { animation: stxt 5s linear infinite; animation-delay: .6s; }
+    .t3 { animation: stxt 5s linear infinite; animation-delay: 1.2s; }
+    .t4 { animation: stxt 5s linear infinite; animation-delay: 1.8s; }
+    .t5 { animation: stxt 5s linear infinite; animation-delay: 2.4s; }
+    @keyframes stxt { 0%,100%{fill:#64748B} 4%,16%{fill:#FBBF24} 24%{fill:#64748B} }
+
+    .clk { animation: clk 5s linear infinite; }
+    @keyframes clk { 0%{transform:translateX(0)} 100%{transform:translateX(400px)} }
+    .glow { animation: breathe 7s ease-in-out infinite; }
+    @keyframes breathe { 0%,100%{opacity:.55} 50%{opacity:1} }
+
+    @media (prefers-reduced-motion: reduce) {
+      .s1,.s2,.s3,.s4,.s5,.t1,.t2,.t3,.t4,.t5,.clk,.glow { animation: none; }
+      .clk { opacity: 0; }
+    }
+  </style>
+
+  <g clip-path="url(#mClip)">
+    <rect width="1200" height="240" fill="#0A0F1C"/>
+    <ellipse class="glow" cx="960" cy="120" rx="320" ry="190" fill="url(#mGlow)"/>
+    <rect x="0" y="0" width="6" height="240" fill="url(#mSpine)"/>
+
+    <text class="mono" x="48" y="48" font-size="11" fill="#FBBF24" letter-spacing="2">COMPUTER ARCHITECTURE · DIGITAL DESIGN</text>
+    <text class="sans" x="48" y="92" font-size="34" font-weight="800" fill="#F1F5F9" letter-spacing="-0.8">MIPS CPU Design</text>
+    <text class="sans" x="48" y="126" font-size="16" fill="#94A3B8">A 32-bit processor built from the register file up — datapath, control unit, instruction and data memory.</text>
+
+    <g transform="translate(48, 150)">
+      <rect x="0"   y="0" width="60"  height="26" rx="13" fill="#2A1D0B" stroke="#78350F" stroke-width="1"/>
+      <text class="mono" x="30"  y="17" font-size="10.5" fill="#FCD34D" text-anchor="middle">VHDL</text>
+
+      <rect x="68"  y="0" width="60"  height="26" rx="13" fill="#2A1015" stroke="#7F1D1D" stroke-width="1"/>
+      <text class="mono" x="98"  y="17" font-size="10.5" fill="#FCA5A5" text-anchor="middle">FPGA</text>
+
+      <rect x="136" y="0" width="112" height="26" rx="13" fill="#12203A" stroke="#1E3A5F" stroke-width="1"/>
+      <text class="mono" x="192" y="17" font-size="10.5" fill="#93C5FD" text-anchor="middle">MIPS 32-BIT ISA</text>
+
+      <rect x="256" y="0" width="104" height="26" rx="13" fill="#0B2530" stroke="#155E75" stroke-width="1"/>
+      <text class="mono" x="308" y="17" font-size="10.5" fill="#67E8F9" text-anchor="middle">CONTROL UNIT</text>
+    </g>
+
+    <text class="mono" x="48" y="210" font-size="10.5" fill="#64748B">THE CONTROL UNIT READS NOTHING BUT THE OPCODE — AND PRODUCES EVERY SIGNAL THE DATAPATH NEEDS</text>
+
+    <!-- five-stage datapath -->
+    <g transform="translate(700, 92)">
+      <text class="mono" x="0" y="-16" font-size="10" fill="#475569" letter-spacing="1.4">ONE INSTRUCTION, FIVE STAGES</text>
+
+      <!-- clock sweep -->
+      <rect class="clk" x="-6" y="-4" width="3" height="56" fill="#F59E0B" fill-opacity="0.5"/>
+
+      <g><rect class="s1" x="0"   y="0" width="72" height="48" rx="10" fill="#171F2E" stroke="#334155" stroke-width="1.5"/>
+         <text class="mono t1" x="36"  y="29" font-size="13" fill="#64748B" text-anchor="middle">IF</text></g>
+      <g><rect class="s2" x="82"  y="0" width="72" height="48" rx="10" fill="#171F2E" stroke="#334155" stroke-width="1.5"/>
+         <text class="mono t2" x="118" y="29" font-size="13" fill="#64748B" text-anchor="middle">ID</text></g>
+      <g><rect class="s3" x="164" y="0" width="72" height="48" rx="10" fill="#171F2E" stroke="#334155" stroke-width="1.5"/>
+         <text class="mono t3" x="200" y="29" font-size="13" fill="#64748B" text-anchor="middle">EX</text></g>
+      <g><rect class="s4" x="246" y="0" width="72" height="48" rx="10" fill="#171F2E" stroke="#334155" stroke-width="1.5"/>
+         <text class="mono t4" x="282" y="29" font-size="13" fill="#64748B" text-anchor="middle">MEM</text></g>
+      <g><rect class="s5" x="328" y="0" width="72" height="48" rx="10" fill="#171F2E" stroke="#334155" stroke-width="1.5"/>
+         <text class="mono t5" x="364" y="29" font-size="13" fill="#64748B" text-anchor="middle">WB</text></g>
+
+      <text class="mono" x="0"   y="70" font-size="9" fill="#475569">FETCH</text>
+      <text class="mono" x="82"  y="70" font-size="9" fill="#475569">DECODE</text>
+      <text class="mono" x="164" y="70" font-size="9" fill="#475569">EXECUTE</text>
+      <text class="mono" x="246" y="70" font-size="9" fill="#475569">MEMORY</text>
+      <text class="mono" x="328" y="70" font-size="9" fill="#475569">WRITE</text>
+    </g>
+
+    <rect x="1" y="1" width="1198" height="238" rx="19" fill="none" stroke="#1E293B" stroke-width="2"/>
+  </g>
+</svg>
