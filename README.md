@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/assets/hero.svg" alt="Jawad Abo Fakher — backend engineer, Java and Spring Boot, Cluj-Napoca. 265 REST endpoints, 91 SQL tables, 506 test files, 104 migrations. Graduating 2026, open to backend roles." width="100%">
+<img src="docs/assets/hero-v2.svg" alt="Jawad Abo Fakher — backend engineer, Java and Spring Boot, Cluj-Napoca. 265 REST endpoints, 91 SQL tables, 506 test files, 104 migrations. Graduating 2026, open to backend roles." width="100%">
 
 <br><br>
 
@@ -33,14 +33,14 @@ Graduating in 2026, looking for a backend or systems engineering role.
 
 ## Stack
 
-<img src="docs/assets/stack.svg" alt="Stack by layer — languages, backend, data, testing, delivery, frontend" width="100%">
+<img src="docs/assets/stack-v2.svg" alt="Stack by layer — languages, backend, data, testing, delivery, frontend" width="100%">
 
 ---
 
 ## Projects
 
 <a href="https://github.com/jaf-git/flowops">
-<img src="docs/assets/project-flowops.svg" alt="FlowOps — process discovery platform in Java 21, Spring Boot, React and PostgreSQL" width="100%">
+<img src="docs/assets/project-flowops-v2.svg" alt="FlowOps — process discovery platform in Java 21, Spring Boot, React and PostgreSQL" width="100%">
 </a>
 
 Small businesses run on processes nobody ever wrote down, and when someone leaves, the process leaves
@@ -66,7 +66,7 @@ about a person? A per-person productivity score clears every technical review an
 <br>
 
 <a href="https://github.com/jaf-git/api-contract-validator">
-<img src="docs/assets/project-validator.svg" alt="API Contract Validator — IntelliJ plugin in Kotlin validating controllers against an OpenAPI specification" width="100%">
+<img src="docs/assets/project-validator-v2.svg" alt="API Contract Validator — IntelliJ plugin in Kotlin validating controllers against an OpenAPI specification" width="100%">
 </a>
 
 Your OpenAPI spec and your controllers drift apart quietly, and a consumer usually finds out before
@@ -83,7 +83,7 @@ and UI tests that drive a live IDE in CI.
 <br>
 
 <a href="https://github.com/jaf-git/hardware-programming">
-<img src="docs/assets/project-mips.svg" alt="MIPS CPU — a 32-bit processor in VHDL with datapath and control unit" width="100%">
+<img src="docs/assets/project-mips-v2.svg" alt="MIPS CPU — a 32-bit processor in VHDL with datapath and control unit" width="100%">
 </a>
 
 A 32-bit MIPS processor built up from the register file: datapath, control unit, instruction and data
@@ -101,7 +101,7 @@ performance and guessing at it.
 <br>
 
 <a href="https://github.com/jaf-git/bank-marketing-neural-network-classifier">
-<img src="docs/assets/project-ml.svg" alt="Bank Marketing classifiers — imbalanced classification on 45,211 UCI records" width="100%">
+<img src="docs/assets/project-ml-v2.svg" alt="Bank Marketing classifiers — imbalanced classification on 45,211 UCI records" width="100%">
 </a>
 
 Two comparable studies on the same 45,211-record dataset, sharing a split, a seed and a preprocessing
@@ -121,7 +121,7 @@ Best result: F1 0.4375, ROC-AUC 0.7910. Modest figures, and honest ones.
 
 ## Algorithms
 
-<img src="docs/assets/algorithms.svg" alt="Algorithms by area — trees, graphs, recursion and dynamic programming, concurrency" width="100%">
+<img src="docs/assets/algorithms-v2.svg" alt="Algorithms by area — trees, graphs, recursion and dynamic programming, concurrency" width="100%">
 
 Separate projects, each built and run, most of them written twice. Writing a structure in a second
 language is what tells you whether you understood it or just remembered the shape of the code.
@@ -255,7 +255,7 @@ Working languages: Arabic (native), English (professional), Romanian (profession
 <div align="center">
 
 <a href="https://github.com/jaf-git/flowops">
-<img src="docs/assets/cta.svg" alt="Available for backend engineering roles, graduating 2026. Cluj-Napoca, Romania, open to hybrid and remote." width="100%">
+<img src="docs/assets/cta-v2.svg" alt="Available for backend engineering roles, graduating 2026. Cluj-Napoca, Romania, open to hybrid and remote." width="100%">
 </a>
 
 <br><br>
