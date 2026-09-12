@@ -1,331 +1,265 @@
 <div align="center">
 
-<img src="docs/assets/hero.svg" alt="Jawad Abo Fakher — Backend Engineer, Java and Spring Boot. Cluj-Napoca, Romania. 265 REST endpoints, 91 SQL tables, 506 automated test files, 40+ algorithms built." width="100%">
+<img src="docs/assets/hero.svg" alt="Jawad Abo Fakher — backend engineer, Java and Spring Boot, Cluj-Napoca. 265 REST endpoints, 91 SQL tables, 506 test files, 104 migrations. Graduating 2026, open to backend roles." width="100%">
 
 <br><br>
 
-[![Java](https://img.shields.io/badge/Java_21-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](#technical-stack)
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)](#technical-stack)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](#technical-stack)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#technical-stack)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#technical-stack)
+![Java](https://img.shields.io/badge/java_21-0A1410?style=flat-square&labelColor=0A1410&color=3BF07A)
+![Spring Boot](https://img.shields.io/badge/spring_boot-0A1410?style=flat-square&labelColor=0A1410&color=1C7A43)
+![PostgreSQL](https://img.shields.io/badge/postgresql-0A1410?style=flat-square&labelColor=0A1410&color=1C7A43)
+![Docker](https://img.shields.io/badge/docker-0A1410?style=flat-square&labelColor=0A1410&color=1C7A43)
+![TypeScript](https://img.shields.io/badge/typescript-0A1410?style=flat-square&labelColor=0A1410&color=1C7A43)
+![C](https://img.shields.io/badge/c-0A1410?style=flat-square&labelColor=0A1410&color=1C7A43)
+
+**[email](mailto:YOUR@EMAIL.COM)** · **[linkedin](https://linkedin.com/in/YOUR-HANDLE)** · **[cv](docs/cv.pdf)** · cluj-napoca, romania
 
 </div>
 
-<br>
+---
+
+I write backend services in Java and Spring Boot, and I'm comfortable further down the stack than
+most people who do.
+
+That's meant literally. These repositories hold a 32-bit MIPS processor in VHDL, POSIX threading and
+Linux system calls in C, a graphics library where the matrix arithmetic is written out rather than
+imported, and a Spring Boot platform with 265 endpoints over a 91-table schema. Working at both ends
+made me better at the middle. I have a decent instinct for where a boundary between layers belongs,
+and I notice when something is asserted to work rather than shown to.
+
+Final year at the Technical University of Cluj-Napoca, Faculty of Automation and Computer Science.
+Graduating in 2026, looking for a backend or systems engineering role.
 
 ---
 
-<br>
+## Stack
 
-<div align="center">
-
-### I build backend systems in Java and Spring Boot — and I can prove they work.
-
-<br>
-
-Final-year Computer Science engineering student at the Technical University of Cluj-Napoca.<br>
-My thesis is a **265-endpoint Spring Boot platform** with a **91-table PostgreSQL schema**, built on<br>
-hexagonal architecture and covered by **506 automated test files**.
-
-<br>
-
-</div>
-
-<br>
+<img src="docs/assets/stack.svg" alt="Stack by layer — languages, backend, data, testing, delivery, frontend" width="100%">
 
 ---
 
-<br>
-
-## At a glance
-
-<br>
-
-|  |  |
-|:--|:--|
-| **Role** | Backend Engineer — Java · Spring Boot · PostgreSQL |
-| **Also strong in** | Systems programming (C, POSIX threads), algorithms, SQL modelling |
-| **Education** | B.Eng. Automation & Computer Science — Technical University of Cluj-Napoca, graduating 2026 |
-| **Location** | Cluj-Napoca, Romania — open to hybrid and remote |
-| **Status** | Available for backend engineering roles |
-
-<br>
-
----
-
-<br>
-
-## Technical stack
-
-<br>
-
-<img src="docs/assets/stack.svg" alt="Technical stack grouped by layer: languages, backend, data, testing, delivery and frontend" width="100%">
-
-<br>
-
-> I am strongest in the **backend and data rows**. The frontend row is real and shipped, but it is
-> where I go when a service needs a face — not where I want to spend my career.
-
-<br>
-
----
-
-<br>
-
-## Featured projects
-
-<br>
+## Projects
 
 <a href="https://github.com/jaf-git/flowops">
-  <img src="docs/assets/project-flowops.svg" alt="FlowOps — process discovery platform in Java 21, Spring Boot, PostgreSQL and React" width="100%">
+<img src="docs/assets/project-flowops.svg" alt="FlowOps — process discovery platform in Java 21, Spring Boot, React and PostgreSQL" width="100%">
 </a>
 
-<br>
+Small businesses run on processes nobody ever wrote down, and when someone leaves, the process leaves
+with them. Existing process-mining tools want an event log that a twelve-person studio doesn't have.
+FlowOps starts from what actually exists — somebody taps a circle beside a chat message — and derives
+everything else from that.
 
-**The problem.** Small businesses run on processes nobody ever wrote down. When someone leaves, the
-process leaves with them.
+```console
+jawad@utcn:~/flowops$ ./gradlew check
+  ✓ 17 bounded contexts, dependency rules enforced by ArchUnit in CI
+  ✓ 91 tables over 104 forward-only Flyway migrations
+  ✓ invariants held by partial unique indexes, not service-layer checks
+  ✓ every endpoint round-tripped against real PostgreSQL in Testcontainers
+  ✓ gitleaks · semgrep · owasp dependency-check · four custom merge gates
+```
 
-**What I built.** A platform that derives those processes from work already happening in chat — then
-turns the recurring shapes into templates a person can approve and run.
+The constraint I'm most pleased with is the scope test every feature has to pass: does this help a
+business discover, document or run a process it already performs, without ever producing a number
+about a person? A per-person productivity score clears every technical review and fails that sentence.
 
-**Engineering highlights**
+**[read the write-up →](https://github.com/jaf-git/flowops)**
 
-- Hexagonal architecture across **17 bounded contexts**, with dependency rules enforced by **ArchUnit** in CI — not by convention
-- **91-table** schema over **104 forward-only Flyway migrations**; concurrency-safe invariants enforced by partial unique indexes rather than service-layer checks
-- Integration tests run against a **real PostgreSQL in Testcontainers**; every HTTP endpoint has a full-stack round-trip test
-- CI pipeline with **gitleaks**, **Semgrep**, **OWASP dependency-check** and four custom merge gates
-
-**[→ Read the full technical write-up](https://github.com/jaf-git/flowops)**
-
-<br>
 <br>
 
 <a href="https://github.com/jaf-git/api-contract-validator">
-  <img src="docs/assets/project-validator.svg" alt="API Contract Validator — IntelliJ IDEA plugin in Kotlin and Java that validates controllers against an OpenAPI specification" width="100%">
+<img src="docs/assets/project-validator.svg" alt="API Contract Validator — IntelliJ plugin in Kotlin validating controllers against an OpenAPI specification" width="100%">
 </a>
 
-<br>
+Your OpenAPI spec and your controllers drift apart quietly, and a consumer usually finds out before
+you do. This reads the spec, walks the route handlers, and reports every disagreement as an editor
+inspection you can click straight to.
 
-**The problem.** Your OpenAPI spec and your controllers drift apart silently. A consumer finds out
-before you do.
+Running inside the IDE changes the engineering problem. The analysis has to work incrementally, on
+files that are partial and often won't compile, without blocking the event dispatch thread. It ships
+like real software too: a changelog, a Marketplace listing generated at build time, Codecov coverage,
+and UI tests that drive a live IDE in CI.
 
-**What I built.** An IntelliJ IDEA plugin that reads the spec, walks the route handlers, and reports
-every disagreement — missing endpoints, wrong methods, schema drift, undeclared status codes — as
-editor inspections you click straight to.
+**[see the plugin →](https://github.com/jaf-git/api-contract-validator)**
 
-**Engineering highlights**
-
-- Runs incrementally inside the IDE on partial, often un-compilable files, without blocking the UI thread
-- Shipped as real software: changelog, Marketplace listing generated at build time, **Codecov** coverage
-- **GitHub Actions** pipeline that drives a real IDE instance for UI tests
-
-**[→ See the plugin](https://github.com/jaf-git/api-contract-validator)**
-
-<br>
 <br>
 
 <a href="https://github.com/jaf-git/hardware-programming">
-  <img src="docs/assets/project-mips.svg" alt="MIPS CPU Design — a 32-bit processor in VHDL with a five-stage datapath and control unit" width="100%">
+<img src="docs/assets/project-mips.svg" alt="MIPS CPU — a 32-bit processor in VHDL with datapath and control unit" width="100%">
 </a>
 
-<br>
+A 32-bit MIPS processor built up from the register file: datapath, control unit, instruction and data
+memory, a test program and an instruction-set map. The control unit reads the opcode and nothing else,
+and produces every signal the rest of the machine needs.
 
-**Why it matters for a backend role.** Knowing what a cache miss, a branch, or a memory access
-actually costs is not trivia — it is the difference between guessing at performance and reasoning
-about it.
+There is no print statement in a datapath, so debugging happens in a waveform viewer. It also changed
+how I read assembly permanently. You can see why a branch costs what it costs, and why `lw` is the
+instruction that complicates the whole design. For backend work that matters more than it sounds like
+it should: knowing what a memory access actually costs is the difference between reasoning about
+performance and guessing at it.
 
-**What I built.** A 32-bit MIPS processor: datapath, control unit, instruction and data memory, plus
-a test program and instruction-set map.
+**[see the design →](https://github.com/jaf-git/hardware-programming)**
 
-**[→ See the design](https://github.com/jaf-git/hardware-programming)**
-
-<br>
 <br>
 
 <a href="https://github.com/jaf-git/bank-marketing-neural-network-classifier">
-  <img src="docs/assets/project-ml.svg" alt="Bank Marketing classifiers — imbalanced classification on 45,211 UCI records" width="100%">
+<img src="docs/assets/project-ml.svg" alt="Bank Marketing classifiers — imbalanced classification on 45,211 UCI records" width="100%">
 </a>
 
-**What I built.** Two comparable studies on the same 45,211-record dataset — classical models first,
-then a tuned neural network — held to the same split and preprocessing so the comparison means
-something.
+Two comparable studies on the same 45,211-record dataset, sharing a split, a seed and a preprocessing
+pipeline so the comparison means something.
 
-**The judgement call that mattered.** Only 11.7 % of records are positive, so predicting "no" for
-everyone scores 88.3 % accuracy. Accuracy is reported and never used to select a model. I also dropped
-the `duration` feature entirely: it is only known after a call ends, so keeping it leaks the answer.
+Only 11.7% of records are positive, so predicting "no" for everyone scores 88.3% accuracy. The study
+is built around refusing that number: accuracy is reported and never used to select a model. I also
+dropped `duration` from the features, since call length is only known once the call has ended and long
+calls are the ones that convert. Keeping it inflates every metric and answers a question nobody can
+ask before picking up the phone.
 
-**[→ Classical models](https://github.com/jaf-git/bank-marketing-term-deposit-subscription-prediction)** · **[→ Neural network](https://github.com/jaf-git/bank-marketing-neural-network-classifier)**
+Best result: F1 0.4375, ROC-AUC 0.7910. Modest figures, and honest ones.
 
-<br>
+**[classical models →](https://github.com/jaf-git/bank-marketing-term-deposit-subscription-prediction)** · **[neural network →](https://github.com/jaf-git/bank-marketing-neural-network-classifier)**
 
 ---
 
-<br>
+## Algorithms
 
-## Algorithms & data structures
+<img src="docs/assets/algorithms.svg" alt="Algorithms by area — trees, graphs, recursion and dynamic programming, concurrency" width="100%">
 
-<br>
-
-<img src="docs/assets/algorithms.svg" alt="Algorithms and data structures implemented in Java and C++ — trees, graphs, recursion and dynamic programming, and concurrency" width="100%">
-
-<br>
-
-Forty-plus problems implemented from scratch — **most of them twice, once in Java and once in C++**.
-Not solutions copied into a file: separate projects, each built and run.
-
-<br>
+Separate projects, each built and run, most of them written twice. Writing a structure in a second
+language is what tells you whether you understood it or just remembered the shape of the code.
 
 <details>
-<summary><b>Graphs</b> — shortest paths, spanning trees, traversal &nbsp;·&nbsp; <a href="https://github.com/jaf-git/graphs-data-structure">view repository</a></summary>
+<summary><code>graphs</code> — shortest paths, spanning trees, traversal</summary>
 
 <br>
 
 | Algorithm | Complexity | Note |
 |:--|:--|:--|
-| Dijkstra (set-based) | `O(E log V)` | A set rather than a heap, so a key can be decreased |
-| Kruskal + union-find | `O(E log E)` | Path compression makes the cycle test near-constant |
-| Kruskal (naive cycle test) | `O(E·V)` | Built first, deliberately, to show what union-find buys |
+| Dijkstra, set-based | `O(E log V)` | A set rather than a heap, so a key can be decreased |
+| Kruskal with union-find | `O(E log E)` | Path compression makes the cycle test near-constant |
+| Kruskal, naive cycle test | `O(E·V)` | Built first on purpose, to show what union-find buys |
 | Prim | `O(E log V)` | The same tree, grown instead of assembled |
-| BFS / DFS | `O(V+E)` | Java and C++ |
-| Multi-source BFS | `O(V+E)` | Seed the queue with every source — the traversal is unchanged |
-| Cycle detection (undirected) | `O(V+E)` | The parent check is not the visited check |
+| BFS and DFS | `O(V+E)` | Java and C++ |
+| Multi-source BFS | `O(V+E)` | Seed the queue with every source; the traversal is unchanged |
+| Cycle detection, undirected | `O(V+E)` | The parent check is not the visited check |
 | Bipartite check | `O(V+E)` | Two-colouring via DFS |
 | Connected components | `O(V²)` | On an adjacency matrix |
 | Shortest path in a binary maze | `O(R·C)` | BFS on an implicit graph |
 
+[repository →](https://github.com/jaf-git/graphs-data-structure)
+
 </details>
 
 <details>
-<summary><b>Trees</b> — traversal, construction, path problems &nbsp;·&nbsp; <a href="https://github.com/jaf-git/Trees-Data-Structure">view repository</a></summary>
+<summary><code>trees</code> — traversal, construction, path problems</summary>
 
 <br>
 
 | Algorithm | Complexity | Note |
 |:--|:--|:--|
-| Morris traversal | `O(n)` time, `O(1)` space | Threading the tree instead of using a stack |
-| Iterative traversal | `O(n)` | Explicit stack — what recursion was doing for you |
-| B-tree construction | — | Node splitting and order invariants, linked-list representation |
+| Morris traversal | `O(n)` time, `O(1)` space | Threading the tree instead of carrying a stack |
+| Iterative traversal | `O(n)` | Explicit stack, which is what recursion was doing for you |
+| B-tree construction | — | Node splitting and order invariants |
 | Lowest common ancestor | `O(n)` | Bottom-up, single pass |
 | Maximum path sum | `O(n)` | The value returned upward differs from the value recorded |
-| Diameter and height | `O(n)` | The same post-order pass returning two different things |
-| Rebuild from in-order + pre-order | `O(n)` | Why that pair is sufficient |
-| Rebuild from in-order + post-order | `O(n)` | The mirror argument |
+| Diameter and height | `O(n)` | One post-order pass returning two things |
+| Rebuild from in-order and pre-order | `O(n)` | Why that pair is sufficient |
+| Rebuild from in-order and post-order | `O(n)` | The mirror argument |
 | Children-sum property | `O(n)` | Mutating a tree to satisfy an invariant |
 | Identical-tree check | `O(n)` | Structural equality |
+
+[repository →](https://github.com/jaf-git/Trees-Data-Structure)
 
 </details>
 
 <details>
-<summary><b>Recursion & dynamic programming</b> — the full progression &nbsp;·&nbsp; <a href="https://github.com/jaf-git/Dynamic-Programming">view repository</a></summary>
+<summary><code>recursion & dp</code> — the full progression</summary>
 
 <br>
 
-The two repositories are deliberately a pair: each problem appears first as plain recursion, then
-memoised, then tabulated. The route between them is the lesson.
+The two repositories are a deliberate pair. Each problem appears first as plain recursion, then
+memoised, then tabulated, because the route between them is the lesson.
 
 ```
 recursion  ──▶  memoise  ──▶  tabulate  ──▶  shrink the table
-exponential     top-down      bottom-up       O(1) space
+exponential     top-down      bottom-up      O(1) space
 ```
 
 | Problem | Technique |
 |:--|:--|
-| Fibonacci | The canonical progression — exponential to constant space |
-| Frog jump | First problem where the recurrence is not obvious from the statement |
-| Subsequence generation | Take / skip — the shape underneath most subset DP |
+| Fibonacci | The canonical progression, exponential to constant space |
+| Frog jump | First problem where the recurrence isn't obvious from the statement |
+| Subsequence generation | Take or skip, the shape underneath most subset DP |
 | Target-sum subsets | The same recursion with a pruning condition |
-| Sorting algorithms | Implemented in C++ |
+| Sorting algorithms | C++ |
+
+[recursion →](https://github.com/jaf-git/recursive-algorithms) · [dynamic programming →](https://github.com/jaf-git/Dynamic-Programming)
 
 </details>
 
 <details>
-<summary><b>Concurrency</b> — threads, synchronisation, coordination &nbsp;·&nbsp; <a href="https://github.com/jaf-git/Multithreading-Space">view repository</a></summary>
+<summary><code>concurrency</code> — threads, synchronisation, coordination</summary>
 
 <br>
 
 | Problem | What it demonstrates |
 |:--|:--|
-| Dining philosophers | Deadlock is a property of an ordering, not of a bug |
-| Recursive filesystem search | Fan-out where the fan-out is not known in advance |
-| …with wait groups | Knowing when work that spawns work has actually finished |
-| Parallel page fetching | I/O-bound parallelism — where threads genuinely pay |
-| Queue management simulation | Correctness expressed as a statistic, not an assertion |
-| POSIX pthreads and mutexes | Against the C API directly, in [Linux-OS-Space](https://github.com/jaf-git/Linux-OS-Space) |
+| Dining philosophers | Deadlock comes from an ordering, not from a bug in any one thread |
+| Recursive filesystem search | Fan-out where you don't know the fan-out in advance |
+| The same, with wait groups | Knowing when work that spawns work has actually finished |
+| Parallel page fetching | I/O-bound parallelism, where threads genuinely pay |
+| Queue management simulation | Correctness that has to be measured rather than asserted |
+| POSIX threads and mutexes | Against the C API directly |
+
+[multithreading →](https://github.com/jaf-git/Multithreading-Space) · [queue simulation →](https://github.com/jaf-git/queues-management-app-using-threads) · [linux →](https://github.com/jaf-git/Linux-OS-Space)
 
 </details>
 
-<br>
-
 ---
-
-<br>
 
 ## How I work
 
-<br>
+**I break a test to check it works.** A passing suite can rest on a false guarantee: an assertion that
+never executes, a traversal order that happens to satisfy a rule the code doesn't enforce, a runner
+that quietly collects fewer files than exist and prints a pass anyway. When a test matters, I break the
+code underneath it and watch for red.
 
-|  |  |
-|:--|:--|
-| **Testing** | Unit, slice, and integration against a real database. Every endpoint has a round-trip test. |
-| **Verification** | I break the code to check the test reddens. A test that never fails is decoration. |
-| **Architecture** | Boundaries enforced by build failures — ArchUnit on the backend, lint rules on the frontend. |
-| **Data** | Forward-only migrations. Invariants in the schema, not in the service layer. |
-| **Security** | Secret scanning, SAST and dependency auditing in CI, with every accepted advisory documented. |
-| **Documentation** | Comments explain *why*. The *what* is already in the code. |
+**Rules nobody enforces stop being followed.** Architecture boundaries, permission names, contrast
+floors. Writing them down works until the first busy afternoon, so in FlowOps they're build failures
+instead, and each gate carries a comment naming the defect that got past everything already watching.
 
-<br>
+**Invariants belong in the schema.** A service-layer check is correct until a second caller appears, a
+migration runs, or someone opens a database client. A partial unique index is correct regardless.
+
+**Comments should explain why.** Most explain what, which the code already says. The `.env.example` in
+my thesis project describes what each variable is for and what breaks when it's wrong, because the one
+people forget is the one whose failure looks like an unrelated problem.
 
 ---
 
-<br>
+## Coursework
 
-## Education & coursework
-
-<br>
-
-**B.Eng. Automation & Computer Science** — Technical University of Cluj-Napoca
-
-<br>
+B.Eng. Automation and Computer Science, Technical University of Cluj-Napoca.
 
 | Area | Repository | Language |
 |:--|:--|:--|
-| Data structures & algorithms | [Trees](https://github.com/jaf-git/Trees-Data-Structure) · [Graphs](https://github.com/jaf-git/graphs-data-structure) · [Recursion](https://github.com/jaf-git/recursive-algorithms) · [DP](https://github.com/jaf-git/Dynamic-Programming) | Java, C++ |
 | Operating systems | [Linux-OS-Space](https://github.com/jaf-git/Linux-OS-Space) | C, Python |
 | Computer architecture | [hardware-programming](https://github.com/jaf-git/hardware-programming) | VHDL |
 | Computer graphics | [Computer-Graphics](https://github.com/jaf-git/Computer-Graphics) | C, C++ |
-| Concurrent programming | [Multithreading-Space](https://github.com/jaf-git/Multithreading-Space) · [queues-management](https://github.com/jaf-git/queues-management-app-using-threads) | Java |
 | Software design | [polynomial-calculator](https://github.com/jaf-git/polynomial-calculator) · [Orders-Management](https://github.com/jaf-git/Orders-Management-application) | Java |
-| Full-stack development | [JBank](https://github.com/jaf-git/JBank-Repository) | Java, TypeScript |
+| Full-stack | [JBank](https://github.com/jaf-git/JBank-Repository) | Java, TypeScript |
 | Intelligent systems | [classical](https://github.com/jaf-git/bank-marketing-term-deposit-subscription-prediction) · [neural](https://github.com/jaf-git/bank-marketing-neural-network-classifier) | Python |
 
-<br>
+Working languages: Arabic (native), English (professional), Romanian (professional).
 
 ---
-
-<br>
 
 <div align="center">
 
 <a href="https://github.com/jaf-git/flowops">
-  <img src="docs/assets/cta.svg" alt="Available for backend engineering roles — explore FlowOps" width="100%">
+<img src="docs/assets/cta.svg" alt="Available for backend engineering roles, graduating 2026. Cluj-Napoca, Romania, open to hybrid and remote." width="100%">
 </a>
 
 <br><br>
 
-**[View my flagship project →](https://github.com/jaf-git/flowops)**
-
-<br>
-
-<!-- ────────────────────────────────────────────────────────────────────────────
-     CONTACT — fill these three in and delete the comment markers around them.
-     A recruiter-facing profile should not rely on GitHub messaging alone.
-
-     **[Email](mailto:you@example.com)**  ·  **[LinkedIn](https://linkedin.com/in/your-handle)**  ·  **[CV](docs/cv.pdf)**
-──────────────────────────────────────────────────────────────────────────── -->
-
-<sub>Cluj-Napoca, Romania &nbsp;·&nbsp; Reach me through <a href="https://github.com/jaf-git">GitHub</a></sub>
-
-<br><br>
+**[email](mailto:YOUR@EMAIL.COM)** · **[linkedin](https://linkedin.com/in/YOUR-HANDLE)** · **[flowops](https://github.com/jaf-git/flowops)**
 
 </div>
