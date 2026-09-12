@@ -1,22 +1,18 @@
-<img src="docs/assets/00-boot.svg" alt="Booting jawad-abo-fakher.jar — Spring Boot startup log: 104 migrations applied, 17 bounded contexts bootstrapped, 265 endpoint handlers mapped, started in 2.418 seconds. Welcome. Jawad Abo Fakher, backend engineer, Java, Spring Boot, PostgreSQL. Available for backend roles 2026, Cluj-Napoca, Romania." width="100%">
+<img src="docs/assets/00-boot.svg" alt="Booting jawad-abo-fakher.jar — Spring Boot startup log ending in: started in 2.418 seconds. Welcome. Jawad Abo Fakher, Java, C, Spring Framework, SQL. Graduating 2026, Cluj-Napoca, Romania." width="100%">
 
-<img src="docs/assets/01-whoami.svg" alt="Who am I — Jawad Abo Fakher, backend engineer. B.Eng Automation and Computer Science, UTCN Cluj-Napoca, graduating 2026. Available for backend roles, hybrid or remote. Arabic, English, Romanian." width="100%">
+<img src="docs/assets/01-whoami.svg" alt="Who am I — Jawad Abo Fakher. Eng. Automation and Computer Science, UTCN Cluj-Napoca, graduating 2026. Based in Cluj-Napoca, Romania. Arabic native, Romanian C1, English B2. Skilled in a variety of technologies, including Java, C, Spring Framework and SQL." width="100%">
 
-<a href="mailto:abofakherjawad@gmail.com"><img src="docs/assets/cta.svg" alt="Let's create something awesome together — mail abofakherjawad@gmail.com" width="100%"></a>
-
-<img src="docs/assets/02-stack.svg" alt="Tech stack — backend Java 21, Spring Boot 3.5, Security, Data JPA, Flyway. Data PostgreSQL 16. Testing JUnit 5, Testcontainers, ArchUnit, Vitest, Playwright. Systems C, POSIX threads, Linux syscalls, VHDL. Delivery Docker, GitHub Actions, Semgrep, OWASP. ML Python, scikit-learn, Keras. Frontend React 19, TypeScript." width="100%">
-
-<a href="mailto:abofakherjawad@gmail.com"><img src="docs/assets/cta.svg" alt="Let's create something awesome together — mail abofakherjawad@gmail.com" width="100%"></a>
+<img src="docs/assets/02-stack.svg" alt="Tech stack — Backend: Java 21, Spring Boot 3.5, Spring Security, Spring Data JPA. Data: PostgreSQL 16, schema design. Testing: JUnit 5, Mockito, Testcontainers, ArchUnit. Systems: Linux, VHDL. Delivery: Docker Compose, GitHub Actions, Git. ML: Python, scikit-learn, Keras. Frontend: React 19." width="100%">
 
 <img src="docs/assets/03-projects.svg" alt="Projects — 4 shown, 16 public repositories." width="100%">
 
-<a href="https://github.com/jaf-git/flowops"><img src="docs/assets/03a-flowops.svg" alt="FlowOps — bachelor thesis. Java 21, Spring Boot 3.5, React 19, PostgreSQL 16. Recovers business processes from the chat people already send. 17 bounded contexts, 265 endpoints, 104 migrations, 506 test files. Hexagonal, ArchUnit, Testcontainers, Flyway." width="100%"></a>
+<a href="https://github.com/jaf-git/flowops"><img src="docs/assets/03a-flowops.svg" alt="FlowOps — a platform that works out how a small business actually runs by reading the conversations its team is already having. Bachelor's thesis. Java 21, Spring Boot 3.5, React 19, PostgreSQL 16, Docker. 17 bounded contexts, 265 endpoints, 506 test files." width="100%"></a>
 
 <a href="https://github.com/jaf-git/api-contract-validator"><img src="docs/assets/03b-validator.svg" alt="Validator — IntelliJ Platform plugin in Kotlin. Flags where your controllers and your OpenAPI spec disagree as you type. Runs incrementally on partial files without blocking the event dispatch thread. PSI, Codecov, UI tests in CI." width="100%"></a>
 
 <a href="https://github.com/jaf-git/hardware-programming"><img src="docs/assets/03c-mips.svg" alt="MIPS CPU — digital design in VHDL on FPGA. A 32-bit processor built up from the register file: datapath, control unit, instruction and data memory. Five-stage, waveform-debugged." width="100%"></a>
 
-<a href="https://github.com/jaf-git/bank-marketing-neural-network-classifier"><img src="docs/assets/03d-classifiers.svg" alt="Classifiers — intelligent systems in Python, scikit-learn and Keras. 45,211 records, 11.7 percent positive. Duration dropped as leakage. Best F1 0.4375, ROC-AUC 0.7910 across 9 models compared." width="100%"></a>
+<a href="https://github.com/jaf-git/bank-marketing-neural-network-classifier"><img src="docs/assets/03d-bankmarketing.svg" alt="Bank Marketing — a study predicting which bank customers will take out a term deposit, across 45,211 real marketing records. Nine models compared under one shared split and preprocessing pipeline, from a decision tree through to a tuned neural network. Python, scikit-learn, Keras. Best F1 0.4375, ROC-AUC 0.7910." width="100%"></a>
 
 <a href="mailto:abofakherjawad@gmail.com"><img src="docs/assets/cta.svg" alt="Let's create something awesome together — mail abofakherjawad@gmail.com" width="100%"></a>
 
@@ -91,14 +87,14 @@ exponential     top-down      bottom-up      O(1) space
 | The same, with wait groups | Knowing when work that spawns work has actually finished |
 | Parallel page fetching | I/O-bound parallelism, where threads genuinely pay |
 | Queue management simulation | Correctness that has to be measured rather than asserted |
-| POSIX threads and mutexes | Against the C API directly |
+| Threads and mutexes | Against the C API directly |
 
 [recursive-algorithms →](https://github.com/jaf-git/recursive-algorithms) · [Dynamic-Programming →](https://github.com/jaf-git/Dynamic-Programming) · [Multithreading-Space →](https://github.com/jaf-git/Multithreading-Space) · [queues-management →](https://github.com/jaf-git/queues-management-app-using-threads)
 
 </details>
 
 <details>
-<summary><b>Coursework</b> — B.Eng. Automation and Computer Science, UTCN</summary>
+<summary><b>Coursework</b> — Eng. Automation and Computer Science, UTCN</summary>
 
 <br>
 
@@ -110,8 +106,6 @@ exponential     top-down      bottom-up      O(1) space
 | Software design | [polynomial-calculator](https://github.com/jaf-git/polynomial-calculator) · [Orders-Management](https://github.com/jaf-git/Orders-Management-application) | Java |
 | Full-stack | [JBank](https://github.com/jaf-git/JBank-Repository) | Java, TypeScript |
 | Intelligent systems | [classical models](https://github.com/jaf-git/bank-marketing-term-deposit-subscription-prediction) · [neural network](https://github.com/jaf-git/bank-marketing-neural-network-classifier) | Python |
-
-Arabic (native) · English (C1) · Romanian (C1) · German (A2)
 
 </details>
 
