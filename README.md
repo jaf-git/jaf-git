@@ -1,115 +1,37 @@
-<img src="docs/assets/00-boot.svg" alt="Booting jawad-abo-fakher.jar — Spring Boot startup log ending in: started in 2.418 seconds. Welcome. Jawad Abo Fakher, Java, C, Spring Framework, SQL. Graduating 2026, Cluj-Napoca, Romania." width="100%">
+<img src="docs/assets/00-boot.svg" alt="Welcome. Spring Boot startup log: Tomcat initialized, 104 migrations applied, 17 bounded contexts bootstrapped, 265 endpoint handlers mapped. Started in 2.418 seconds." width="100%">
 
-<img src="docs/assets/01-whoami.svg" alt="Who am I — Jawad Abo Fakher. Eng. Automation and Computer Science, UTCN Cluj-Napoca, graduating 2026. Based in Cluj-Napoca, Romania. Arabic native, Romanian C1, English B2. Skilled in a variety of technologies, including Java, C, Spring Framework and SQL." width="100%">
+<img src="docs/assets/01-whoami.svg" alt="Who am I. Jawad Abo Fakher, Backend Developer and Brand Strategist. Eng. Automation and Computer Science, UTCN Cluj-Napoca, graduating 2026. Cluj-Napoca, Romania. Arabic native, Romanian C1, English B2, German A1. Combines branding, UI/UX, strategy and technical skills to help brands grow with well defined systems and processes. Spring Framework, Microservices, Database Design, Strategy Development, Project Management, Business Process Mapping and Automation." width="100%">
 
-<img src="docs/assets/02-stack.svg" alt="Tech stack — Backend: Java 21, Spring Boot 3.5, Spring Security, Spring Data JPA. Data: PostgreSQL 16, schema design. Testing: JUnit 5, Mockito, Testcontainers, ArchUnit. Systems: Linux, VHDL. Delivery: Docker Compose, GitHub Actions, Git. ML: Python, scikit-learn, Keras. Frontend: React 19." width="100%">
+<img src="docs/assets/02-stack.svg" alt="Tech stack. Backend: Java 21, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, Spring AOP. Design: Domain-Driven Design, design patterns, SOLID, REST, OpenAPI. Data: PostgreSQL, MySQL, SQLite, UML. Testing: JUnit 5, Mockito, Testcontainers, ArchUnit. Delivery: Docker, Git, Maven, GitHub Actions. Systems: Linux, multithreading, VHDL, MIPS, FPGA. ML: Python, scikit-learn, Keras. Frontend: React." width="100%">
 
-<img src="docs/assets/03-projects.svg" alt="Projects — 4 shown, 16 public repositories." width="100%">
+<img src="docs/assets/03-projects.svg" alt="Projects. 5 shown, 16 public repositories." width="100%">
 
-<a href="https://github.com/jaf-git/flowops"><img src="docs/assets/03a-flowops.svg" alt="FlowOps — a platform that works out how a small business actually runs by reading the conversations its team is already having. Bachelor's thesis. Java 21, Spring Boot 3.5, React 19, PostgreSQL 16, Docker. 17 bounded contexts, 265 endpoints, 506 test files." width="100%"></a>
+<a href="https://github.com/jaf-git/flowops"><img src="docs/assets/03a-flowops.svg" alt="FlowOps. Reconstructs how a small business operates by analysing the conversations its team already has. Java 21, Spring Boot 3.5, React 19, PostgreSQL 16, Flyway, Docker, Testcontainers. 17 bounded contexts, 265 REST endpoints, 506 test files." width="100%"></a>
 
-<a href="https://github.com/jaf-git/api-contract-validator"><img src="docs/assets/03b-validator.svg" alt="Validator — IntelliJ Platform plugin in Kotlin. Flags where your controllers and your OpenAPI spec disagree as you type. Runs incrementally on partial files without blocking the event dispatch thread. PSI, Codecov, UI tests in CI." width="100%"></a>
+<a href="https://github.com/jaf-git/api-contract-validator"><img src="docs/assets/03b-validator.svg" alt="Validator. An IntelliJ IDEA plugin that keeps source code and API documentation consistent, highlighting divergence in the editor as you type. Kotlin, IntelliJ Platform SDK, Gradle, OpenAPI." width="100%"></a>
 
-<a href="https://github.com/jaf-git/hardware-programming"><img src="docs/assets/03c-mips.svg" alt="MIPS CPU — digital design in VHDL on FPGA. A 32-bit processor built up from the register file: datapath, control unit, instruction and data memory. Five-stage, waveform-debugged." width="100%"></a>
+<a href="https://github.com/jaf-git/bank-marketing-neural-network-classifier"><img src="docs/assets/03c-bank.svg" alt="Bank Marketing. A comparative study across 45,211 records, nine models under one shared split and preprocessing pipeline. Best F1 0.4375, ROC-AUC 0.7910. Python, scikit-learn, Keras." width="100%"></a>
 
-<a href="https://github.com/jaf-git/bank-marketing-neural-network-classifier"><img src="docs/assets/03d-bankmarketing.svg" alt="Bank Marketing — a study predicting which bank customers will take out a term deposit, across 45,211 real marketing records. Nine models compared under one shared split and preprocessing pipeline, from a decision tree through to a tuned neural network. Python, scikit-learn, Keras. Best F1 0.4375, ROC-AUC 0.7910." width="100%"></a>
+<a href="https://github.com/jaf-git/JBank-Repository"><img src="docs/assets/03d-jbank.svg" alt="JBank. A small online banking application covering accounts, customers and transactions. Java, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, MySQL, Angular." width="100%"></a>
 
-<a href="mailto:abofakherjawad@gmail.com"><img src="docs/assets/cta.svg" alt="Let's create something awesome together — mail abofakherjawad@gmail.com" width="100%"></a>
+<a href="https://github.com/jaf-git/queues-management-app-using-threads"><img src="docs/assets/03e-queues.svg" alt="Queue Sim. A multi-threaded simulation comparing dispatch strategies across queues. Java, Maven, concurrency." width="100%"></a>
 
-<br>
+<img src="docs/assets/04-algorithms.svg" alt="Algorithms. 31 implementations in Java and C++." width="100%">
 
-<details>
-<summary><b>Graphs</b></summary>
+<a href="https://github.com/jaf-git/graphs-data-structure"><img src="docs/assets/04a-graphs.svg" alt="Graphs, 10 implementations: BFS and DFS, Dijkstra, Prim, Kruskal, Kruskal with union-find, multi-source BFS, cycle detection, bipartite check, connected components, binary-maze shortest path." width="100%"></a>
 
-<br>
+<a href="https://github.com/jaf-git/Trees-Data-Structure"><img src="docs/assets/04b-trees.svg" alt="Trees, 10 implementations: Morris traversal, iterative traversal, B-tree construction, lowest common ancestor, maximum path sum, diameter, height, rebuild from inorder and preorder, rebuild from inorder and postorder, children-sum property." width="100%"></a>
 
-- [Dijkstra](https://github.com/jaf-git/graphs-data-structure/tree/main/Dijkstra)
-- [Kruskal with union-find](https://github.com/jaf-git/graphs-data-structure/tree/main/KruskalDisjointSets)
-- [Kruskal](https://github.com/jaf-git/graphs-data-structure/tree/main/Kruskal)
-- [Prim](https://github.com/jaf-git/graphs-data-structure/tree/main/Prim)
-- [BFS](https://github.com/jaf-git/graphs-data-structure/tree/main/BFS)
-- [DFS](https://github.com/jaf-git/graphs-data-structure/tree/main/DFS)
-- [Multi-source BFS](https://github.com/jaf-git/graphs-data-structure/tree/main/RottenOranges)
-- [Cycle detection, undirected](https://github.com/jaf-git/graphs-data-structure/tree/main/CycleDetection)
-- [Bipartite check](https://github.com/jaf-git/graphs-data-structure/tree/main/BipartiteGraph)
-- [Connected components](https://github.com/jaf-git/graphs-data-structure/tree/main/NumberOfProvinces)
-- [Shortest path in a binary maze](https://github.com/jaf-git/graphs-data-structure/tree/main/ShortestDistanceBinaryMaze)
+<a href="https://github.com/jaf-git/recursive-algorithms"><img src="docs/assets/04c-recursion.svg" alt="Recursion, 5 implementations: Fibonacci, frog jump, subsequences, target-sum subsets, sorting algorithms." width="100%"></a>
 
-[graphs-data-structure →](https://github.com/jaf-git/graphs-data-structure)
+<a href="https://github.com/jaf-git/Multithreading-Space"><img src="docs/assets/04d-threads.svg" alt="Threads, 6 implementations: dining philosophers, filesystem search, wait groups, parallel page fetching, queue simulation, mutexes and locks." width="100%"></a>
 
-</details>
-
-<details>
-<summary><b>Trees</b></summary>
-
-<br>
-
-- [Morris traversal](https://github.com/jaf-git/Trees-Data-Structure/tree/main/MorrisTraversal)
-- [Iterative traversal](https://github.com/jaf-git/Trees-Data-Structure/tree/main/IterativeTraversal)
-- [B-tree construction](https://github.com/jaf-git/Trees-Data-Structure/tree/main/BTree)
-- [Lowest common ancestor](https://github.com/jaf-git/Trees-Data-Structure/tree/main/LowestCommonAncestor)
-- [Maximum path sum](https://github.com/jaf-git/Trees-Data-Structure/tree/main/MaximumPathSum)
-- [Diameter of a binary tree](https://github.com/jaf-git/Trees-Data-Structure/tree/main/Diameter)
-- [Height of a binary tree](https://github.com/jaf-git/Trees-Data-Structure/tree/main/Height)
-- [Rebuild from in-order and pre-order](https://github.com/jaf-git/Trees-Data-Structure/tree/main/ConstructInorderPreorder)
-- [Rebuild from in-order and post-order](https://github.com/jaf-git/Trees-Data-Structure/tree/main/ConstructInorderPostorder)
-- [Children-sum property](https://github.com/jaf-git/Trees-Data-Structure/tree/main/ChildrenSumProperty)
-- [Identical-tree check](https://github.com/jaf-git/Trees-Data-Structure/tree/main/IdenticalTrees)
-
-[Trees-Data-Structure →](https://github.com/jaf-git/Trees-Data-Structure)
-
-</details>
-
-<details>
-<summary><b>Recursion and dynamic programming</b></summary>
-
-<br>
-
-- [Fibonacci](https://github.com/jaf-git/recursive-algorithms/tree/main/Fibonacci)
-- [Frog jump](https://github.com/jaf-git/recursive-algorithms/tree/main/FrogJump)
-- [Printing subsequences](https://github.com/jaf-git/recursive-algorithms/tree/main/Subsequences)
-- [Subsequences with a target sum](https://github.com/jaf-git/recursive-algorithms/tree/main/TargetSum)
-- [Sorting algorithms](https://github.com/jaf-git/recursive-algorithms/tree/main/Sorting)
-
-[recursive-algorithms →](https://github.com/jaf-git/recursive-algorithms)
-
-</details>
-
-<details>
-<summary><b>Concurrency</b></summary>
-
-<br>
-
-- [Dining philosophers](https://github.com/jaf-git/Multithreading-Space/tree/main/DiningPhilosophers)
-- [Recursive filesystem search](https://github.com/jaf-git/Multithreading-Space/tree/main/FileSearch)
-- [Filesystem search with wait groups](https://github.com/jaf-git/Multithreading-Space/tree/main/FileSearchWaitGroup)
-- [Counting letters across fetched pages](https://github.com/jaf-git/Multithreading-Space/tree/main/LetterCount)
-
-[Multithreading-Space →](https://github.com/jaf-git/Multithreading-Space)
-
-</details>
-
-<details>
-<summary><b>Coursework</b></summary>
-
-<br>
-
-- [Operating systems — Linux-OS-Space](https://github.com/jaf-git/Linux-OS-Space)
-- [Computer architecture — MIPS CPU](https://github.com/jaf-git/hardware-programming)
-- [Computer graphics](https://github.com/jaf-git/Computer-Graphics)
-- [Polynomial calculator](https://github.com/jaf-git/polynomial-calculator)
-- [Orders management](https://github.com/jaf-git/Orders-Management-application)
-- [Queue management simulation](https://github.com/jaf-git/queues-management-app-using-threads)
-- [JBank — online banking](https://github.com/jaf-git/JBank-Repository)
-- [Bank marketing — classical models](https://github.com/jaf-git/bank-marketing-term-deposit-subscription-prediction)
-- [Bank marketing — neural network](https://github.com/jaf-git/bank-marketing-neural-network-classifier)
-
-</details>
+<a href="mailto:abofakherjawad@gmail.com"><img src="docs/assets/cta.svg" alt="Let's create something awesome together. Mail abofakherjawad@gmail.com" width="100%"></a>
 
 <br>
 
 <div align="center">
 
-**[abofakherjawad@gmail.com](mailto:abofakherjawad@gmail.com)** &nbsp;&middot;&nbsp; **[LinkedIn](https://linkedin.com/in/jawadabofakher)** &nbsp;&middot;&nbsp; Cluj-Napoca, Romania
+**[abofakherjawad@gmail.com](mailto:abofakherjawad@gmail.com)** &nbsp;&middot;&nbsp; **[LinkedIn](https://linkedin.com/in/jawadabofakher)** &nbsp;&middot;&nbsp; **[Behance](https://www.behance.net/jawadaf)** &nbsp;&middot;&nbsp; Cluj-Napoca, Romania
 
 </div>
