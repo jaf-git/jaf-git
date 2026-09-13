@@ -32,6 +32,6 @@
 
 <div align="center">
 
-**[abofakherjawad@gmail.com](mailto:abofakherjawad@gmail.com)** &nbsp;&middot;&nbsp; **[LinkedIn](https://linkedin.com/in/jawadabofakher)** &nbsp;&middot;&nbsp; **[Behance](https://www.behance.net/jawadaf)** &nbsp;&middot;&nbsp; Cluj-Napoca, Romania
+**[abofakherjawad@gmail.com](mailto:abofakherjawad@gmail.com)** &nbsp;&middot;&nbsp; **[LinkedIn](https://linkedin.com/in/jawadabofakher)** &nbsp;&middot;&nbsp; Cluj-Napoca, Romania
 
 </div>
